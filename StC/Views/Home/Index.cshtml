@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <h1>URL</h1>
+    <div class="col-md-10">
+        <input type="text" class="form-control" value="https://en.wikipedia.org/wiki/Main_Page" placeholder="write url here..." id="txturl" />
+    </div>
+    <div class="col-md-2">
+        <button id="btnurl" class="btn btn-info">
+            Search
+        </button>
+    </div>
+
+</div>
+
+<script src="~/js/app.js"></script>
+<script>
+    $(function(){
+        app.init()
+    })
+</script>
