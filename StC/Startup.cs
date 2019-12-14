@@ -23,6 +23,8 @@ namespace StC
         {
             services.AddMvc();
 
+            services.AddTransient<MySqlDatabase>(_ => new MySqlDatabase("server=localhost;port=3306;database=stcdb; uid=root; pwd=daudi2016;"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
