@@ -1,0 +1,24 @@
+﻿<div class="row">
+    <div class="col-md-9">
+        <i>Total Words: <span data-bind="html: wordscount.length"></span></i>
+        <table class="table table-hover table-striped table-condensed" data-bind="visible: wordscount.length">
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: wordscount">
+                <tr>
+                    <td data-bind="html: word"></td>
+                    <td data-bind="html: cnt"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/js/app.js"></script>
+<script>$(function () {
+        app.getAllWords();
+    })</script>
